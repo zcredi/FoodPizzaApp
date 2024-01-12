@@ -9,21 +9,36 @@
 /* Begin PBXBuildFile section */
 		86B33F042B5175B600C5D525 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86B33F032B5175B600C5D525 /* AppDelegate.swift */; };
 		86B33F062B5175B600C5D525 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86B33F052B5175B600C5D525 /* SceneDelegate.swift */; };
-		86B33F082B5175B600C5D525 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86B33F072B5175B600C5D525 /* ViewController.swift */; };
-		86B33F0B2B5175B600C5D525 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86B33F092B5175B600C5D525 /* Main.storyboard */; };
 		86B33F0D2B5175B700C5D525 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 86B33F0C2B5175B700C5D525 /* Assets.xcassets */; };
 		86B33F102B5175B700C5D525 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86B33F0E2B5175B700C5D525 /* LaunchScreen.storyboard */; };
+		86B33F182B5178FE00C5D525 /* Nexus in Resources */ = {isa = PBXBuildFile; fileRef = 86B33F172B5178FD00C5D525 /* Nexus */; };
+		86B33F1F2B51815200C5D525 /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86B33F1E2B51815200C5D525 /* UIColor+Extensions.swift */; };
+		86B33F212B51816900C5D525 /* UIFont+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86B33F202B51816900C5D525 /* UIFont+Extensions.swift */; };
+		86B33F242B5181A000C5D525 /* UILabel+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86B33F232B5181A000C5D525 /* UILabel+Extension.swift */; };
+		86B33F332B5198A100C5D525 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86B33F322B5198A100C5D525 /* MainTabBarController.swift */; };
+		86B33F382B51A8F600C5D525 /* HomeScene in Frameworks */ = {isa = PBXBuildFile; productRef = 86B33F372B51A8F600C5D525 /* HomeScene */; };
+		86B33F3A2B51A8FD00C5D525 /* APIManager in Frameworks */ = {isa = PBXBuildFile; productRef = 86B33F392B51A8FD00C5D525 /* APIManager */; };
+		86B33F3C2B51AB3A00C5D525 /* Nexus in Frameworks */ = {isa = PBXBuildFile; productRef = 86B33F3B2B51AB3A00C5D525 /* Nexus */; };
+		86B33F3D2B51AD5100C5D525 /* SceneFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86B33F342B51A67600C5D525 /* SceneFactory.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		86B33F002B5175B600C5D525 /* FoodPizzaApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodPizzaApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		86B33F032B5175B600C5D525 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		86B33F052B5175B600C5D525 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		86B33F072B5175B600C5D525 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		86B33F0A2B5175B600C5D525 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		86B33F0C2B5175B700C5D525 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		86B33F0F2B5175B700C5D525 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		86B33F112B5175B700C5D525 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		86B33F172B5178FD00C5D525 /* Nexus */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Nexus; sourceTree = "<group>"; };
+		86B33F1E2B51815200C5D525 /* UIColor+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensions.swift"; sourceTree = "<group>"; };
+		86B33F202B51816900C5D525 /* UIFont+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+Extensions.swift"; sourceTree = "<group>"; };
+		86B33F232B5181A000C5D525 /* UILabel+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+Extension.swift"; sourceTree = "<group>"; };
+		86B33F2E2B51931B00C5D525 /* sf-ui-display-bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "sf-ui-display-bold.ttf"; sourceTree = "<group>"; };
+		86B33F2F2B51931B00C5D525 /* sf-ui-display-semiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "sf-ui-display-semiBold.ttf"; sourceTree = "<group>"; };
+		86B33F302B51931B00C5D525 /* sf-ui-display-medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "sf-ui-display-medium.ttf"; sourceTree = "<group>"; };
+		86B33F312B51931B00C5D525 /* sf-ui-display-regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "sf-ui-display-regular.ttf"; sourceTree = "<group>"; };
+		86B33F322B5198A100C5D525 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		86B33F342B51A67600C5D525 /* SceneFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneFactory.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +46,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				86B33F3C2B51AB3A00C5D525 /* Nexus in Frameworks */,
+				86B33F382B51A8F600C5D525 /* HomeScene in Frameworks */,
+				86B33F3A2B51A8FD00C5D525 /* APIManager in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,8 +58,10 @@
 		86B33EF72B5175B600C5D525 = {
 			isa = PBXGroup;
 			children = (
+				86B33F172B5178FD00C5D525 /* Nexus */,
 				86B33F022B5175B600C5D525 /* FoodPizzaApp */,
 				86B33F012B5175B600C5D525 /* Products */,
+				86B33F362B51A8F600C5D525 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +76,85 @@
 		86B33F022B5175B600C5D525 /* FoodPizzaApp */ = {
 			isa = PBXGroup;
 			children = (
+				86B33F192B517F6600C5D525 /* Application */,
+				86B33F1A2B517F6800C5D525 /* SceneFactory */,
+				86B33F1C2B51800600C5D525 /* NavigationModule */,
+				86B33F1D2B51801C00C5D525 /* UIConstants */,
+				86B33F1B2B517F6A00C5D525 /* SupportingFiles */,
+			);
+			path = FoodPizzaApp;
+			sourceTree = "<group>";
+		};
+		86B33F192B517F6600C5D525 /* Application */ = {
+			isa = PBXGroup;
+			children = (
 				86B33F032B5175B600C5D525 /* AppDelegate.swift */,
 				86B33F052B5175B600C5D525 /* SceneDelegate.swift */,
-				86B33F072B5175B600C5D525 /* ViewController.swift */,
-				86B33F092B5175B600C5D525 /* Main.storyboard */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		86B33F1A2B517F6800C5D525 /* SceneFactory */ = {
+			isa = PBXGroup;
+			children = (
+				86B33F342B51A67600C5D525 /* SceneFactory.swift */,
+			);
+			path = SceneFactory;
+			sourceTree = "<group>";
+		};
+		86B33F1B2B517F6A00C5D525 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				86B33F252B51930200C5D525 /* Fonts */,
 				86B33F0C2B5175B700C5D525 /* Assets.xcassets */,
 				86B33F0E2B5175B700C5D525 /* LaunchScreen.storyboard */,
 				86B33F112B5175B700C5D525 /* Info.plist */,
 			);
-			path = FoodPizzaApp;
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		86B33F1C2B51800600C5D525 /* NavigationModule */ = {
+			isa = PBXGroup;
+			children = (
+				86B33F322B5198A100C5D525 /* MainTabBarController.swift */,
+			);
+			path = NavigationModule;
+			sourceTree = "<group>";
+		};
+		86B33F1D2B51801C00C5D525 /* UIConstants */ = {
+			isa = PBXGroup;
+			children = (
+				86B33F222B51818A00C5D525 /* UIKit */,
+				86B33F1E2B51815200C5D525 /* UIColor+Extensions.swift */,
+				86B33F202B51816900C5D525 /* UIFont+Extensions.swift */,
+			);
+			path = UIConstants;
+			sourceTree = "<group>";
+		};
+		86B33F222B51818A00C5D525 /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				86B33F232B5181A000C5D525 /* UILabel+Extension.swift */,
+			);
+			path = UIKit;
+			sourceTree = "<group>";
+		};
+		86B33F252B51930200C5D525 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				86B33F2E2B51931B00C5D525 /* sf-ui-display-bold.ttf */,
+				86B33F302B51931B00C5D525 /* sf-ui-display-medium.ttf */,
+				86B33F312B51931B00C5D525 /* sf-ui-display-regular.ttf */,
+				86B33F2F2B51931B00C5D525 /* sf-ui-display-semiBold.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		86B33F362B51A8F600C5D525 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +173,11 @@
 			dependencies = (
 			);
 			name = FoodPizzaApp;
+			packageProductDependencies = (
+				86B33F372B51A8F600C5D525 /* HomeScene */,
+				86B33F392B51A8FD00C5D525 /* APIManager */,
+				86B33F3B2B51AB3A00C5D525 /* Nexus */,
+			);
 			productName = FoodPizzaApp;
 			productReference = 86B33F002B5175B600C5D525 /* FoodPizzaApp.app */;
 			productType = "com.apple.product-type.application";
@@ -125,9 +220,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				86B33F182B5178FE00C5D525 /* Nexus in Resources */,
 				86B33F102B5175B700C5D525 /* LaunchScreen.storyboard in Resources */,
 				86B33F0D2B5175B700C5D525 /* Assets.xcassets in Resources */,
-				86B33F0B2B5175B600C5D525 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,23 +233,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				86B33F082B5175B600C5D525 /* ViewController.swift in Sources */,
+				86B33F1F2B51815200C5D525 /* UIColor+Extensions.swift in Sources */,
 				86B33F042B5175B600C5D525 /* AppDelegate.swift in Sources */,
+				86B33F3D2B51AD5100C5D525 /* SceneFactory.swift in Sources */,
+				86B33F332B5198A100C5D525 /* MainTabBarController.swift in Sources */,
+				86B33F242B5181A000C5D525 /* UILabel+Extension.swift in Sources */,
 				86B33F062B5175B600C5D525 /* SceneDelegate.swift in Sources */,
+				86B33F212B51816900C5D525 /* UIFont+Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		86B33F092B5175B600C5D525 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				86B33F0A2B5175B600C5D525 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		86B33F0E2B5175B700C5D525 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -289,10 +380,9 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 5MT2PBNQ85;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = FoodPizzaApp/Info.plist;
+				INFOPLIST_FILE = FoodPizzaApp/SupportingFiles/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
@@ -321,10 +411,9 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 5MT2PBNQ85;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = FoodPizzaApp/Info.plist;
+				INFOPLIST_FILE = FoodPizzaApp/SupportingFiles/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
@@ -366,6 +455,21 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		86B33F372B51A8F600C5D525 /* HomeScene */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = HomeScene;
+		};
+		86B33F392B51A8FD00C5D525 /* APIManager */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = APIManager;
+		};
+		86B33F3B2B51AB3A00C5D525 /* Nexus */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Nexus;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 86B33EF82B5175B600C5D525 /* Project object */;
 }
