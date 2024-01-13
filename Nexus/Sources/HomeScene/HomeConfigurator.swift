@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import APIManager
 
 public protocol HomeConfigurator {
     func configured(_ vc: HomeViewController) -> HomeViewController
@@ -13,19 +14,19 @@ public protocol HomeConfigurator {
 
 final class DefaultHomeSceneConfigurator: HomeConfigurator {
     private var sceneFactory: SceneFactory
-    
-    init(
-        sceneFactory: SceneFactory
-    ) {
+
+    init(sceneFactory: SceneFactory) {
         self.sceneFactory = sceneFactory
     }
 
     func configured(_ vc: HomeViewController) -> HomeViewController {
-        let interactor = HomeInteractor()
         let presenter = HomePresenter()
+        let worker = ItemsWorker(networkService: NetworkService())
+        let interactor = HomeInteractor(worker: worker, presenter: presenter)
+
         presenter.view = vc
-        interactor.presenter = presenter
         vc.interactor = interactor
+
         return vc
     }
 }
