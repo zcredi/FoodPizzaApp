@@ -12,7 +12,8 @@ protocol HomeView: UIView {
 }
 
 protocol HomeDisplayLogic: AnyObject {
-//    func displayHomeData(_ viewModel: HomeViewModel)
+    func displayFetchedItems(items: [DisplayedItemViewModel])
+    func displayError(message: String)
 }
 
 public final class HomeViewController: UIViewController {

@@ -8,14 +8,25 @@
 import Foundation
 
 protocol HomeBusinessLogic {
-    
+    func fetchItems()
 }
 
 final class HomeInteractor: HomeBusinessLogic {
     weak var presenter: HomePresentationLogic?
-    
-    //MARK: - init(_:)
-    init() {
-    
+    var worker: ItemsWorkerProtocol?
+
+    init(worker: ItemsWorkerProtocol) {
+        self.worker = worker
+    }
+
+    func fetchItems() {
+        worker?.fetchItems { [weak self] result in
+            switch result {
+            case .success(let items):
+                self?.presenter?.presentFetchedItems(items: items)
+            case .failure(let error):
+                self?.presenter?.presentError(error: error)
+            }
+        }
     }
 }
