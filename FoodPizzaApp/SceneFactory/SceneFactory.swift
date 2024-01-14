@@ -9,12 +9,16 @@ import UIKit
 import HomeScene
 
 public protocol SceneFactory {
-    func makeLoginScene(with configurator: HomeConfigurator) -> UIViewController
+    func makeHomeScene() -> UIViewController
 }
 
-public final class DefaultSceneFactory: SceneFactory {
-    public func makeLoginScene(with configurator: HomeConfigurator) -> UIViewController {
-        let vc = HomeViewController()
-        return configurator.configured(vc)
+final class DefaultSceneFactory: SceneFactory {
+    //MARK: - init(_:)
+    public init() {}
+    
+    public func makeHomeScene() -> UIViewController {
+        let homeViewController = HomeViewController()
+        let homeConfigurator = DefaultHomeSceneConfigurator(sceneFactory: self)
+        return homeConfigurator.configured(homeViewController)
     }
 }

@@ -9,7 +9,6 @@ import Foundation
 import APIManager
 
 struct DisplayedItemViewModel {
-    let id: Int
     let category: String
     let name: String
     let avatarURL: URL?
@@ -17,7 +16,6 @@ struct DisplayedItemViewModel {
     let formattedPrice: String
 
     init(from element: DisplayedItemElement) {
-        id = element.id
         category = element.category
         name = element.name
         avatarURL = URL(string: element.avatar)
@@ -41,14 +39,11 @@ final class HomePresenter: HomePresentationLogic {
     }
 
     func presentFetchedItems(items: [DisplayedItemElement]) {
-        // Преобразование данных для отображения
-        let displayedItems = items.map { DisplayedItemViewModel(from: $0) }
-        view?.displayFetchedItems(items: displayedItems)
-    }
+            let viewModels = items.map { DisplayedItemViewModel(from: $0) }
+            view?.displayFetchedItems(items: viewModels)
+        }
 
-    func presentError(error: NetworkError) {
-        // Преобразование ошибки в формат для отображения
-        let errorMessage = error.localizedDescription
-        view?.displayError(message: errorMessage)
-    }
+        func presentError(error: NetworkError) {
+            view?.displayError(message: error.localizedDescription)
+        }
 }

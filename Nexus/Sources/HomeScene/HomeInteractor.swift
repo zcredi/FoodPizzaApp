@@ -14,11 +14,11 @@ protocol HomeBusinessLogic {
 final class HomeInteractor: HomeBusinessLogic {
     weak var presenter: HomePresentationLogic?
     var worker: ItemsWorkerProtocol?
-
+    
     init(worker: ItemsWorkerProtocol) {
         self.worker = worker
     }
-
+    
     func fetchItems() {
         worker?.fetchItems { [weak self] result in
             switch result {

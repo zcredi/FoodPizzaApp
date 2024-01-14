@@ -8,7 +8,7 @@
 import UIKit
 
 protocol HomeView: UIView {
-//    var actionButton: UIButton { get }
+    //    var actionButton: UIButton { get }
 }
 
 protocol HomeDisplayLogic: AnyObject {
@@ -26,5 +26,31 @@ public final class HomeViewController: UIViewController {
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
+    }
+    
+    //MARK: - Life Circle
+    public override func viewDidLoad() {
+        super.viewDidLoad()
+        interactor?.fetchItems()
+        setupViews()
+        setConstraints()
+    }
+    
+    private func setupViews() {
+    }
+    
+    
+    func displayFetchedItems(items: [DisplayedItemViewModel]) {
+        // Обновление данных коллекции
+    }
+    
+    func displayError(message: String) {
+        // Отображение ошибки
+    }
+}
+
+extension HomeViewController {
+    func setConstraints() {
+        
     }
 }
